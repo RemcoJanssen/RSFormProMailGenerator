@@ -68,7 +68,7 @@ $table_data[]= array("straat"=>$row['straat'],"woonplaats"=>$row['woonplaats']);
 		<div class="container">
 			<div class="hero-unit">
 				<h1>RSForm!Pro E-Mail Generator</h1>
-				<p>This simple webapplication allows you to generate E-Mail templates for your RSForm!Pro forms.<br/>Very handy for creating Admin Mails and User Mails.</p>
+				<p>This simple webapplication allows you to generate HTML E-Mail templates for your RSForm!Pro forms.<br/>Very handy for creating Admin Mails and User Mails.</p>
 				<p>This tool was built by <a target=_blank href="http://about.me/renekreijveld">René Kreijveld</a> using Twitter Bootstrap and Google Prettify.</p>
 			</div>
 			<?php
@@ -228,7 +228,7 @@ $table_data[]= array("straat"=>$row['straat'],"woonplaats"=>$row['woonplaats']);
 								<div class="span12">
 									<div class="control-group">
 										<div class="controls">
-											<button type="submit" class="btn btn-primary">Submit</button>
+											<button type="submit" class="btn btn-primary">Generate HTML</button>
 										</div>
 									</div>
 								</div>
