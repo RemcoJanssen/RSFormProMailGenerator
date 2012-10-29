@@ -20,9 +20,11 @@ Installation instructions
 4. Close your FTP session.
 5. Go to the frontend of your Joomla website, for exaple: www.yoursite.com
 6. Add the name of the RSFormProMailGenerator behind the frontend URL,
-   for exaple www.yoursite.com/mailformgen
+   for example www.yoursite.com/mailformgen
    
 That is all!
+
+The form fields are added to the email HTML in the order they are setup inside the form.
 
 If you no longer need to generate Admin Mails or User Mails, I advise you to remove the RSFormProMailGenerator from your website.
 RSFormProMailGenerator is not a security threat to your website, but an external person who runs RSFormProMailGenerator on your website can see what forms you have installed.
