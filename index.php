@@ -11,7 +11,7 @@ $dbprefix = $config->dbprefix;
 $task = $_POST["task"];
 $formid = $_POST["formid"];
 $tabletag = $_POST["tabletag"];
-$tablewidth = $_POST["tablewidth"];
+$tablecss = $_POST["tablecss"];
 $tdcssc = $_POST["tdcssc"];
 if ($tdcssc == 1) {
 	$tdstylec = ' style="'.$_POST["tdstylec"].'"';
@@ -82,7 +82,7 @@ $table_data[]= array("straat"=>$row['straat'],"woonplaats"=>$row['woonplaats']);
 					} else {
 						echo '<pre class="prettyprint  linenums">';
 						if ($tabletag == 1) {
-							echo htmlspecialchars('<table style="width:'.$tablewidth.'px;">').'<br/>'.htmlspecialchars('  <tbody>').'<br/>';
+							echo htmlspecialchars('<table style="'.$tablecss.'">').'<br/>'.htmlspecialchars('  <tbody>').'<br/>';
 						}
 						while($row = mysql_fetch_array($result)) {
 							if ($tabletag == 1) {
@@ -215,11 +215,12 @@ $table_data[]= array("straat"=>$row['straat'],"woonplaats"=>$row['woonplaats']);
 								<div class="span7">
 									<div class="control-group">
 										<label class="control-label">
-											Form width<br/>
-											<a class="btn btn-mini btn-danger" data-placement="top" data-content="The width of the form to use. Only relevant if <em>add table tag</em> is set to <em>yes</em>." rel="popover" href="#" data-original-title="Form width">Help</a>
+											Form table css<br/>
+											<a class="btn btn-mini btn-danger" data-placement="top" data-content="CSS to be applied to the form table. Only relevant if <em>add table tag</em> is set to <em>yes</em>." rel="popover" href="#" data-original-title="Form table css">Help</a>
 										</label>
 										<div class="controls">
-											<input class="input-mini" name="tablewidth" type="text" id="tablewidth" value="600"> px
+											<input name="tablecss" type="text" id="tablecss" value=""><br/>
+											<em>Example:</em> <strong>width:600px;border-collapse:collapse;</strong>
 										</div>
 									</div>
 								</div>
